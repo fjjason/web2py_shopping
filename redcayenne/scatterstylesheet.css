@@ -1,0 +1,38 @@
+body {
+  font: 13px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.view {
+  fill: url(#gradient);
+  stroke: #000;
+}
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+.tooltip {
+    position: absolute;				
+    width: 170px;					
+    height: 100px;									
+    font: 12px sans-serif;
+    font-weight: bold;
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 5px;			
+    pointer-events: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.dot {
+  stroke: #000;
+}
+
+/*Add Tooltip Type here*/

@@ -1,0 +1,47 @@
+country,flavor,points,price,province,title,date,variety,winery
+Portugal,fruity,87,15,Douro,Quinta dos Avidagos 2011 Avidagos Red (Douro),2011,Portuguese Red,Quinta dos Avidagos
+US,oaky,86,40,Virginia,Tarara 2010 #SocialSecret Red (Virginia),2010,Red Blend,Tarara
+US,oaky,88,23,California,Ferrari-Carano 2014 Siena Red (Sonoma County),2014,Red Blend,Ferrari-Carano
+Italy,earthy,92,70,Piedmont,Ceretto 2003 Bricco Rocche Prapa  (Barolo),2003,Nebbiolo,Ceretto
+Italy,fruity,88,25,Northeastern Italy,Tenuta Peter Salva & Sahne 2007 De Silva Sauvignon (Alto Adige),2007,Sauvignon,Tenuta Peter Salva & Sahne
+South Africa,fruity,90,40,Coastal Region,Delaire Graff 2013 Reserve White (Coastal Region),2013,White Blend,Delaire Graff
+Argentina,fruity,85,15,Mendoza Province,Cueva de las Manos 2007 Reserve Malbec (Luján de Cuyo),2007,Malbec,Cueva de las Manos
+US,oaky,92,125,California,Parallel 2010 Fortune Teller Cabernet Sauvignon (Napa Valley),2010,Cabernet Sauvignon,Parallel
+US,fruity,96,68,California,Rochioli 2014 South River Chardonnay (Russian River Valley),2014,Chardonnay,Rochioli
+US,woody,91,38,California,Le Vigne 2014 Di Domenico Cabernet Sauvignon (Paso Robles),2014,Cabernet Sauvignon,Le Vigne
+US,caramel,93,85,California,Les Belles Collines 2012 Les Sommets Cabernet Sauvignon (Napa Valley),2012,Cabernet Sauvignon,Les Belles Collines
+France,fruity,93,20,Provence,Chateau Vignelaure 2015 Rose (Coteaux d'Aix-en-Provence),2015,Rose,Cha�teau Vignelaure
+Argentina,oaky,87,11,Mendoza Province,Tilia 2011 Malbec (Mendoza),2011,Malbec,Tilia
+France,fruity,92,34,Alsace,Jean-Marc Bernhard 2013 Wineck-Schlossberg Grand Cru Riesling (Alsace),2013,Riesling,Jean-Marc Bernhard
+US,woody,83,11,California,Kirkland Signature 2012 Meritage (Napa Valley),2012,Meritage,Kirkland Signature
+US,oaky,84,25,California,Crossbarn by Paul Hobbs 2009 Chardonnay (Sonoma Coast),2009,Chardonnay,Crossbarn by Paul Hobbs
+Chile,chemical,82,20,Leyda Valley,Amayna 2011 Sauvignon Blanc (Leyda Valley),2011,Sauvignon Blanc,Amayna
+Italy,earthy,80,12,Central Italy,Fattoria Giuseppe Savini 2011 Rondineto Merlot (Colli Aprutini),2011,Merlot,Fattoria Giuseppe Savini
+Italy,caramel,100,210,Tuscany,Avignonesi 1995 Occhio di Pernice  (Vin Santo di Montepulciano),1995,Prugnolo Gentile,Avignonesi
+Spain,oaky,81,11,Catalonia,Raimat 2009 Castell de Raimat Cabernet Sauvignon (Costers del Segre),2009,Cabernet Sauvignon,Raimat
+US,fruity,82,13,California,Magnolia Court 2012 Sauvignon Blanc (Central Coast),2012,Sauvignon Blanc,Magnolia Court
+US,woody,89,18,California,Bink 2013 Lumineux Rose (Yorkville Highlands),2013,Rose,Bink
+Italy,earthy,91,105,Piedmont,Viberti 2007 La Volta Riserva  (Barolo),2007,Nebbiolo,Viberti
+US,fruity,90,19,California,Kuyam 2008 Thirteen Moons Red (Santa Barbara County),2008,Bordeaux-style Red Blend,Kuyam
+France,fruity,87,15,Bordeaux,Chateau Vrai Caillou 2014  Bordeaux Suparieur,2014,Bordeaux-style Red Blend,Chateau Vrai Caillou
+Chile,caramel,83,8,Colchagua Valley,Viña Bisquertt 2014 Petirrojo Reserva Estate Grown Cabernet Sauvignon (Colchagua Valley),2014,Cabernet Sauvignon,Via Bisquertt
+Germany,fruity,93,55,Rheingau,Schloss Johannisberger 2012 Grünlock Spätlese Riesling (Rheingau),2012,Riesling,Schloss Johannisberger
+US,microbiological,92,25,California,Ancestrale 2016 Pet Nat Method Ancestral Bassi Vineyard Pinot Noir (San Luis Obispo County),2016,Pinot Noir,Ancestrale
+US,fruity,91,20,California,Calstar Cellars 2014 Sauvignon Blanc (Russian River Valley),2014,Sauvignon Blanc,Calstar Cellars
+Argentina,oaky,82,12,Mendoza Province,Casarena 2014 505 Chardonnay (Mendoza),2014,Chardonnay,Casarena
+New Zealand,herbal,88,15,Marlborough,Twin Islands 2013 Sauvignon Blanc (Marlborough),2013,Sauvignon Blanc,Twin Islands
+Australia,fruity,87,19,South Australia,Penfolds 2002 Reserve Bin Riesling (Eden Valley),2002,Riesling,Penfolds
+US,fruity,86,22,California,Roth 2010 Merlot (Alexander Valley),2010,Merlot,Roth
+Portugal,microbiological,87,10,Tejo,Quinta da Alorna 2011 Portal da Aguia White (Tejo),2011,Portuguese White,Quinta da Alorna
+US,fruity,89,12,Oregon,Firesteed 2009 Pinot Gris (Oregon),2009,Pinot Gris,Firesteed
+US,oaky,82,18,California,Peltier 2010 Peltier Station Zinfandel (Lodi),2010,Zinfandel,Peltier
+US,fruity,87,12,California,Line 39 2014 Pinot Grigio (California),2014,Pinot Grigio,Line 39
+Argentina,fruity,85,18,Mendoza Province,Chakana 2014 Estate Selection Chardonnay (Mendoza),2014,Chardonnay,Chakana
+France,fruity,93,70,Burgundy,La Chablisienne 2009 Les Preuses Grand Cru  (Chablis),2009,Chardonnay,La Chablisienne
+US,fruity,87,30,California,Cline 2012 Live Oak Vineyards Zinfandel (Contra Costa County),2012,Zinfandel,Cline
+France,fruity,86,25,Burgundy,Simonnet-Febvre 2011  Bourgogne Vézelay,2011,Chardonnay,Simonnet-Febvre
+Spain,herbal,89,35,Northern Spain,Puelles 2004 Reserva  (Rioja),2004,Tempranillo,Puelles
+US,herbal,96,50,California,Babcock 2009 Microcosm Pinot Noir (Sta. Rita Hills),2009,Pinot Noir,Babcock
+Italy,fruity,95,90,Piedmont,Damilano 2011 Cannubi  (Barolo),2011,Nebbiolo,Damilano
+US,herbal,85,36,California,Collier Falls 2011 Hillside Estate Primitivo (Dry Creek Valley),2011,Primitivo,Collier Falls
+Argentina,oaky,91,150,Mendoza Province,Bodega Catena Zapata 2008 Adrianna Vineyard Malbec (Mendoza),Malbec,Bodega Catena Zapata,
