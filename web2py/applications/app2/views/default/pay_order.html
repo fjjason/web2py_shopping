@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+
+<h1>Order Confirmation</h1>
+
+Here, one should display a nicely formatted invoice.
+
+<form action="{{=URL('default', 'order_paid')}}" method="POST">
+<script
+  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  data-key="pk_test_CeE2VVxAs3MWCUDMQpWe8KcX"
+  data-amount="{{=total}}"
+  data-name="Our nice shopping cart"
+  data-description="Cart content"
+  data-billing-address="true"
+  data-shipping-address="true"
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-locale="auto">
+</script>
+<input type="hidden" name="order_id" value="{{=order_id}}" />
+<input type="hidden" name="order_key" value="{{=order_key}}" />
+</form>

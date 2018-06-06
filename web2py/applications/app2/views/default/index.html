@@ -1,0 +1,123 @@
+{{extend 'layout.html'}}
+
+{{block head}}
+<script src="{{=URL('static', 'js/vue.js')}}"></script>
+<script>
+    var products_url = "{{=URL('default', 'get_products')}}";
+    var get_cart_url = "{{=URL('default', 'get_cart')}}";
+    var get_users_url = "{{=URL('default', 'get_users')}}";
+    var users_url = "{{=URL('api', 'get_users')}}";
+    var post_cart_url = "{{=URL('default', 'post_cart')}}";
+    var create_order_url = "{{=URL('default', 'create_order')}}";
+    var pay_order_url = "{{=URL('default', 'pay_order')}}";
+    var add_products_url = "{{=URL('api', 'add_products', user_signature=True )}}";
+    var save_product_url = "{{=URL('api', 'save_product', user_signature=True)}}";
+</script>
+{{end}}
+
+<div class="main_content">
+    {{if auth.user is not None:}}
+    <div id="vue-div" style="display:none">
+
+        <div v-if="self_page">
+          <!-- Code to upload files, with control buttons -->
+          <div id="uploader_div" style="display:none">
+            Upload an image file: <input name="file" id="file_input" v-on:change="upload_file2" type="file" accept="image/jpeg">
+            Set a price<input id="price" name="price" type="number" on:change="set_price" ></input>
+            <button type="submit" id ="submit" v-on:click="upload_file" >submit</button>
+          </div>
+
+          <button v-if="!is_uploading" v-on:click="open_uploader"><i class="fa fa-plus"></i></button>
+          <button v-if="is_uploading"  v-on:click="close_uploader">Cancel</button>
+        </div>
+
+
+        <div class="control_bar container">
+
+            <div class="search_div threequarters">
+                <span v-if="page=='prod'">
+                    <input class="search_input" v-model="product_search"/>
+                    <button class="btn" v-on:click="do_search"><i class="fa fa-search fa-lg"></i></button>
+                </span>
+                <span v-if="page=='cart'" class="page_title"><i class="fa fa-shopping-cart"></i> Your Shopping Cart</span>
+            </div>
+
+            <div class="shopping_button quarter">
+                <span v-if="page=='prod'">
+                    <button class="btn orange" v-on:click="goto('cart')">
+                        <i class="fa fa-lg fa-shopping-cart"></i> ${cart_size}
+                    </button>
+                </span>
+                <span v-if="page=='cart'">
+                    <button class="btn" v-on:click="goto('prod')"> Continue shopping </button>
+                </span>
+                List of Users:
+                <table class="fill" id="user_selector">
+                  <tbody>
+                    <ul id = "myList" class="center">
+                      <!-- This row is you; code for getting your own images, and for setting self_page -->
+                        <a id ={{=auth.user.first_name}}>
+                          {{=auth.user.first_name}}</a>
+                        <br>
+
+                    </ul>
+                    <!-- Then, one row for each person. -->
+                  </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div v-if="page=='prod'" id="products_list">
+
+            <div v-for="(product, index) in products" class="container">
+                <div class="third prod_image">
+                    <img v-bind:src="product.image" width="100%" class="product_image"/>
+                </div>
+                <div class="twothirds product_info">
+                    <div class="product_quantity_price">
+                        <span v-if="!product.is_editting" class="product.price">$ ${product.price}</span>
+                        <textarea v-if="product.is_editting" v-model="product.price_model" class="product_price"> </textarea>
+                        <div class="buttons" v-if="product.is_editting">
+                            <a class="btn rounded" v-on:click="save_product(product._idx)">
+                                <button>  Save </button>
+                            </a>
+                        </div>
+
+                        <span class="buy_buttons">
+                            <button class="btn red" v-on:click="buy_product(product._idx)"><i class="fa fa-lg fa-shopping-cart"></i> Buy</button>
+
+                            <button class="btn red" v-if="email == product.name" v-on:click="edit_product(product._idx)"><i ></i> Edit</button>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div v-if="page=='cart'" id="cart_list">
+            <div v-for="product in cart" class="container">
+                <div class="col-md-3 prod_image third">
+                    <img v-bind:src="product.image" width="100%" class="product_image"/>
+                </div>
+                <div class="col-md-10 product_info twothirds">
+                    <div class="product_quantity_price">
+                        <span class="product_price">$ ${product.price}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="total_price">
+                Your total price: $ ${cart_total}
+                <button class="btn blue" v-on:click="pay()"><i class="fa fa-lg fa-credit-card"></i> Pay</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    {{else:}}
+    Please Login
+    {{pass}}
+</div>
+
+<script src="{{=URL('static', 'js/default_index.js')}}"></script>
